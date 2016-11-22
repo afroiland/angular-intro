@@ -39,7 +39,7 @@
       <ul class="list-group">
         <li class="list-group-item" ng-repeat="person in sigmanaut.people"> <!-- What needs to be repeated? -->
           <!-- TODO: Create a list item for everyone in the class -->
-          <span>{{person.firstName}} {{person.lastName}} {{person.git_username}} {{person.shoutout}}</span><!-- include the other parameters for the person -->
+          <span>{{person.firstName}} {{person.lastName}} - <a ng-href="http://www.github.com/{{person.git_username}}">{{person.git_username}}</a> - {{person.shoutout}}</span><!-- include the other parameters for the person -->
         </li>
       </ul>
     </section>
